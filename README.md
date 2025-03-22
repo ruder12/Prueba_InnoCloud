@@ -23,3 +23,6 @@ en cada rama esta la configuracion de cada proyecto.
 - React Router Dom para navegación
 - plantilla free justada a las necesidades para rapida gestion
 
+base datos 
+![tienda](https://github.com/user-attachments/assets/70bb4bf6-1ca8-4842-93f6-54d5dc38b5b1)
+
