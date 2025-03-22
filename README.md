@@ -26,3 +26,11 @@ en cada rama esta la configuracion de cada proyecto.
 base datos 
 ![tienda](https://github.com/user-attachments/assets/70bb4bf6-1ca8-4842-93f6-54d5dc38b5b1)
 
+
+# Agregar productos 
+
+1. Ejecute el script donde insertara segun los clientes ya establecidos.
+2. agregue valores segun sea necesario y que existen los clientes y producto, si no le causara una exceptionSql.
+```sh
+  INSERT INTO client_product (id, client_id, product_id) VALUES(0, 2, 1);
+   
