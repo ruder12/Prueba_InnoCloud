@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "7c3b6854-1b08-47fc-b959-650f2e6560a4",
+		"name": "Prueba_InnoCloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17995522"
+	},
+	"item": [
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Prueba_InnoCloud/Producto/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Prueba_InnoCloud",
+								"Producto",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"txtNombre\":\"RAM 16GB RGB\",\r\n    \"txtStock\": \"3\",\r\n    \"txtPrecio\": \"1452.00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/Prueba_InnoCloud/Producto/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Prueba_InnoCloud",
+								"Producto",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllByCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Prueba_InnoCloud/Producto/getAllByCliente/clienteId=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Prueba_InnoCloud",
+								"Producto",
+								"getAllByCliente",
+								"clienteId=2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Prueba_InnoCloud/Cliente/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Prueba_InnoCloud",
+								"Cliente",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"txtNombre\":\"Leonardo da Vinci\",\r\n    \"txtEmail\": \"leodavinci@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/Prueba_InnoCloud/Cliente/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Prueba_InnoCloud",
+								"Cliente",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ordenes",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Prueba_InnoCloud/Order/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Prueba_InnoCloud",
+								"Order",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\":\"1\",\r\n    \"details\": [\r\n        {\r\n            \"idproducto\": \"8\",\r\n            \"cantidad\": \"1\",\r\n            \"total\": \"254.00\"\r\n        }\r\n       \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/Prueba_InnoCloud/Order/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Prueba_InnoCloud",
+								"Order",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
